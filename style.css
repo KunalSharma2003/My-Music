@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 90px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3;
+}
+header {
+  background-color: #270082;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 15px #a688ed;
+  padding: 7px 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 1.7rem;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s ease-in-out;
+
+  text-shadow: 5px 5px 15px #a688ed;
+}
+.menu_bar {
+  display: none;
+  font-size: 2rem;
+}
+.hero_section {
+  background: url(images/hero_image.png);
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.hero_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero_section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero_section h3 {
+  font-size: 2.2rem;
+}
+.hero_section p {
+  font-size: 1.5rem;
+}
+.music_section {
+  background-color: #270082;
+  padding-top: 50px;
+  color: white;
+}
+.music_section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.music_section h1 {
+  font-size: 3rem;
+}
+.music_section h3 {
+  font-size: 2rem;
+}
+.music_section p {
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+}
+button {
+  border: none;
+  padding: 10px 15px;
+  transition: 0.2s ease-in-out;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.primary-btn {
+  background-color: #e34747;
+  color: white;
+}
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+
+.about_music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* .about_music h2 {
+  font-weight: 900;
+} */
+.secondary-btn {
+  background-color: #37008e;
+  color: white;
+}
+.video_section {
+  background: url(images/video.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  color: white;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.video_section .container {
+  text-transform: capitalize;
+}
+.video_section .container h3 {
+  font-size: 2.5rem;
+  padding: 20px;
+  font-weight: bold;
+}
+.gift_section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+  gap: 50px;
+
+  scroll-margin: 120px;
+}
+.gift_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+.gift_content button {
+  align-self: center;
+}
+footer {
+  font-size: 1.6rem;
+}
+.footer-upper {
+  background-color: #1b0058;
+  color: white;
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-upper h4 {
+  padding-bottom: 10px;
+  font-weight: bolder;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: #37008e;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .ipad-iphone-img img {
+    width: 100%;
+  }
+  .about_music {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mac-img img {
+    width: 100%;
+    height: auto;
+  }
+  .gift_section {
+    padding: 20px;
+  }
+  .video_section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 786px) {
+  header,
+  .hero_section {
+    padding: 20px;
+  }
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 10px 20px;
+  }
+  .hero_section img {
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  .menu_bar {
+    display: block;
+    cursor: pointer;
+  }
+  .ipad-iphone-img img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .about_music {
+    padding-top: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mac-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .music_section {
+    padding-bottom: 100px;
+  }
+  .video_section {
+    padding: 10px;
+  }
+  .gift_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gift_card img {
+    width: 100%;
+    height: auto;
+  }
+  .gift_content {
+    padding: 10px;
+  }
+  .gift_content h1 {
+    font-size: 3rem;
+  }
+  .gift_content p {
+    font-size: 1.7rem;
+  }
+  .footer-upper .container {
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .ipad-iphone-img {
+    margin-top: 20px;
+    top: 10px;
+  }
+  .music_section {
+    max-height: 80vh;
+  }
+  .music_section p {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .music_section .container {
+    gap: 15px;
+    padding-top: 10px;
+  }
+  header {
+    padding: 5px 20px;
+  }
+  .music_section {
+    height: 100vh;
+  }
+  .Orange {
+    color: white;
+  }
+  .mac-img img {
+    width: 100%;
+    height: auto;
+  }
+  .about_music {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .video_section .container {
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (min-width: 375px) {
+  .music_section p {
+    width: 100%;
+    padding: 10px;
+  }
+  .mac-img img {
+    width: 100%;
+    height: auto;
+  }
+}
